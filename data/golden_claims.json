@@ -1,0 +1,62 @@
+[
+  {
+    "id": "C1",
+    "description": "My car was hit from behind at a traffic signal. Rear bumper and boot are damaged.",
+    "days_to_report": 5,
+    "amount": 80000,
+    "police_report": true,
+    "photos": true,
+    "expected_decision": "approve",
+    "reason": "Accident is covered, reported in time, documents are complete."
+  },
+  {
+    "id": "C2",
+    "description": "I hit a divider at night. The police test showed I had been drinking.",
+    "days_to_report": 3,
+    "amount": 120000,
+    "police_report": true,
+    "photos": true,
+    "expected_decision": "reject",
+    "reason": "Drunk driving is an exclusion."
+  },
+  {
+    "id": "C3",
+    "description": "A truck scratched my car door while parked. I forgot to report it.",
+    "days_to_report": 45,
+    "amount": 15000,
+    "police_report": false,
+    "photos": true,
+    "expected_decision": "reject",
+    "reason": "Reported after 45 days. The limit is 30 days."
+  },
+  {
+    "id": "C4",
+    "description": "My car was stolen from outside my house last night.",
+    "days_to_report": 1,
+    "amount": 450000,
+    "police_report": false,
+    "photos": false,
+    "expected_decision": "human_review",
+    "reason": "Theft is covered, but the police report is missing. A human must check."
+  },
+  {
+    "id": "C5",
+    "description": "My front tyres are very old and worn. Please pay for new tyres.",
+    "days_to_report": 2,
+    "amount": 20000,
+    "police_report": false,
+    "photos": true,
+    "expected_decision": "reject",
+    "reason": "Normal wear and tear is an exclusion."
+  },
+  {
+    "id": "C6",
+    "description": "Heavy accident, full front damage. Policy was bought only 10 days ago.",
+    "days_to_report": 4,
+    "amount": 480000,
+    "police_report": true,
+    "photos": true,
+    "expected_decision": "human_review",
+    "reason": "Covered on paper, but a very new policy with a very large claim is a fraud signal."
+  }
+]
