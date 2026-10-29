@@ -39,7 +39,20 @@ class ExtractedClaim(BaseModel):
     )
     no_valid_licence: bool = Field(description="True only if text says driver had no valid licence")
     racing_or_stunt: bool = Field(description="True only if text says racing or stunts")
-    intentional_damage: bool = Field(description="True only if text says damage was done on purpose")
+    intentional_damage: bool = Field(
+        description=(
+            "True only if the text says the PERSON MAKING THE CLAIM, or someone acting "
+            "for them, damaged the car on purpose. "
+            "False if a thief, vandal, or other person damaged the car."
+        )
+    )
+    other_driver: bool = Field(
+        description=(
+            "True if the text says someone OTHER than the policyholder was driving "
+            "the insured car (brother, friend, driver, etc). "
+            "False if the policyholder was driving, or if it does not say."
+        )
+    )
 
 
 llm = ChatGroq(model=MODEL_NAME, temperature=0)
