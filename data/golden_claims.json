@@ -7,7 +7,8 @@
     "police_report": true,
     "photos": true,
     "expected_decision": "approve",
-    "reason": "Accident is covered, reported in time, documents are complete."
+    "reason": "Accident is covered, reported in time, documents are complete.",
+    "policy_age_days": 400
   },
   {
     "id": "C2",
@@ -17,7 +18,8 @@
     "police_report": true,
     "photos": true,
     "expected_decision": "reject",
-    "reason": "Drunk driving is an exclusion."
+    "reason": "Drunk driving is an exclusion.",
+    "policy_age_days": 800
   },
   {
     "id": "C3",
@@ -27,7 +29,8 @@
     "police_report": false,
     "photos": true,
     "expected_decision": "reject",
-    "reason": "Reported after 45 days. The limit is 30 days."
+    "reason": "Reported after 45 days. The limit is 30 days.",
+    "policy_age_days": 200
   },
   {
     "id": "C4",
@@ -37,7 +40,8 @@
     "police_report": false,
     "photos": false,
     "expected_decision": "human_review",
-    "reason": "Theft is covered, but the police report is missing. A human must check."
+    "reason": "Theft is covered, but the police report is missing. A human must check.",
+    "policy_age_days": 365
   },
   {
     "id": "C5",
@@ -47,7 +51,8 @@
     "police_report": false,
     "photos": true,
     "expected_decision": "reject",
-    "reason": "Normal wear and tear is an exclusion."
+    "reason": "Normal wear and tear is an exclusion.",
+    "policy_age_days": 600
   },
   {
     "id": "C6",
@@ -57,6 +62,7 @@
     "police_report": true,
     "photos": true,
     "expected_decision": "human_review",
-    "reason": "Covered on paper, but a very new policy with a very large claim is a fraud signal."
+    "reason": "Covered on paper, but a very new policy with a very large claim is a fraud signal.",
+    "policy_age_days": 10
   }
 ]
