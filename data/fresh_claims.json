@@ -1,0 +1,1 @@
+{"id": "F1", "description": "I was not drinking, a truck hit me at the signal.", "days_to_report": 4, "amount": 45000, "police_report": false, "photos": true, "policy_age_days": 300, "expected_decision": "approve", "expected_payout": 40000}

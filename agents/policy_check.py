@@ -16,6 +16,9 @@ def check_policy(claim: dict, extracted: dict) -> dict:
         reject.append("Exclusion: racing or stunt driving")
     if extracted["intentional_damage"]:
         reject.append("Exclusion: damage done on purpose")
+            # Unsure about alcohol: a person must decide, we do not guess
+    if extracted.get("alcohol_uncertain") and not extracted["driver_drunk"]:
+        review.append("Claimant unsure about alcohol or drugs")
     if extracted["incident_type"] == "wear_and_tear":
         reject.append("Exclusion: normal wear and tear")
 

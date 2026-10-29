@@ -22,7 +22,21 @@ class ExtractedClaim(BaseModel):
             "other = anything else."
         )
     )
-    driver_drunk: bool = Field(description="True only if text says driver was drunk or on drugs")
+    driver_drunk: bool = Field(
+        description=(
+            "True only if the text clearly says the PERSON MAKING THE CLAIM "
+            "(the insured driver) was drunk or on drugs. "
+            "False if the text says ANOTHER driver was drunk. "
+            "False if the claimant is only unsure or says they may have had a drink."
+        )
+    )
+    alcohol_uncertain: bool = Field(
+        description=(
+            "True if the person making the claim says they may have, or did, have "
+            "any alcohol or drugs but is unsure or says it was a small amount. "
+            "False if alcohol is not mentioned, or if it is about another driver."
+        )
+    )
     no_valid_licence: bool = Field(description="True only if text says driver had no valid licence")
     racing_or_stunt: bool = Field(description="True only if text says racing or stunts")
     intentional_damage: bool = Field(description="True only if text says damage was done on purpose")
@@ -35,7 +49,8 @@ extractor = llm.with_structured_output(ExtractedClaim, method="json_schema")
 def extract(description: str) -> ExtractedClaim:
     prompt = (
         "Read this insurance claim text. Fill the fields using ONLY what the text says. "
-        "If the text does not mention something, answer false.\n\n"
+        "If the text does not mention something, answer false. "
+        "Be careful about WHO did something: the person making the claim, or someone else.\n\n"
         f"Claim text: {description}"
     )
     last_error = None
