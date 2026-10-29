@@ -1,10 +1,90 @@
 [
-  {"id": "F1", "description": "I was not drinking. A truck hit my car at the signal and ran away.", "days_to_report": 4, "amount": 45000, "police_report": false, "photos": true, "policy_age_days": 300, "expected_decision": "approve", "expected_payout": 40000},
-  {"id": "F2", "description": "My brother was driving my car with my permission and he crashed into a wall.", "days_to_report": 3, "amount": 80000, "police_report": true, "photos": true, "policy_age_days": 500, "expected_decision": "reject", "expected_payout": 0},
-  {"id": "F3", "description": "The accident happened last month. I did not take any photos.", "days_to_report": 40, "amount": 30000, "police_report": false, "photos": false, "policy_age_days": 400, "expected_decision": "human_review", "expected_payout": 0},
-  {"id": "F4", "description": "A bike hit my car in the parking lot and scratched the door.", "days_to_report": 30, "amount": 50000, "police_report": false, "photos": true, "policy_age_days": 200, "expected_decision": "reject", "expected_payout": 0},
-  {"id": "F5", "description": "A bus hit my car from behind. The bumper and the light are broken.", "days_to_report": 5, "amount": 50001, "police_report": false, "photos": true, "policy_age_days": 250, "expected_decision": "approve", "expected_payout": 0},
-  {"id": "F6", "description": "sir my car got smash by lorry yesterday night, i was going home from office, front light and bumper broken please help", "days_to_report": 1, "amount": 35000, "police_report": false, "photos": true, "policy_age_days": 150, "expected_decision": "human_review", "expected_payout": 0},
-  {"id": "F7", "description": "I had a drink two days before the accident, but on the day of the accident I was completely sober.", "days_to_report": 2, "amount": 65000, "police_report": true, "photos": true, "policy_age_days": 400, "expected_decision": "approve", "expected_payout": 60000},
-  {"id": "F8", "description": "A thief broke my window and took the stereo. The car is still with me.", "days_to_report": 1, "amount": 15000, "police_report": false, "photos": true, "policy_age_days": 500, "expected_decision": "reject", "expected_payout": 0}
+  {
+    "id": "F1",
+    "description": "I was not drinking. A truck hit my car at the signal and ran away.",
+    "days_to_report": 4,
+    "amount": 45000,
+    "police_report": false,
+    "photos": true,
+    "policy_age_days": 300,
+    "expected_decision": "approve",
+    "expected_payout": 40000
+  },
+  {
+    "id": "F2",
+    "description": "My brother was driving my car with my permission and he crashed into a wall.",
+    "days_to_report": 3,
+    "amount": 80000,
+    "police_report": true,
+    "photos": true,
+    "policy_age_days": 500,
+    "expected_decision": "human_review",
+    "expected_payout": 0
+  },
+  {
+    "id": "F3",
+    "description": "The accident happened last month. I did not take any photos.",
+    "days_to_report": 40,
+    "amount": 30000,
+    "police_report": false,
+    "photos": false,
+    "policy_age_days": 400,
+    "expected_decision": "reject",
+    "expected_payout": 0
+  },
+  {
+    "id": "F4",
+    "description": "A bike hit my car in the parking lot and scratched the door.",
+    "days_to_report": 30,
+    "amount": 50000,
+    "police_report": false,
+    "photos": true,
+    "policy_age_days": 200,
+    "expected_decision": "approve",
+    "expected_payout": 45000
+  },
+  {
+    "id": "F5",
+    "description": "A bus hit my car from behind. The bumper and the light are broken.",
+    "days_to_report": 5,
+    "amount": 50001,
+    "police_report": false,
+    "photos": true,
+    "policy_age_days": 250,
+    "expected_decision": "human_review",
+    "expected_payout": 0
+  },
+  {
+    "id": "F6",
+    "description": "sir my car got smash by lorry yesterday night, i was going home from office, front light and bumper broken please help",
+    "days_to_report": 1,
+    "amount": 35000,
+    "police_report": false,
+    "photos": true,
+    "policy_age_days": 150,
+    "expected_decision": "approve",
+    "expected_payout": 30000
+  },
+  {
+    "id": "F7",
+    "description": "I had a drink two days before the accident, but on the day of the accident I was completely sober.",
+    "days_to_report": 2,
+    "amount": 65000,
+    "police_report": true,
+    "photos": true,
+    "policy_age_days": 400,
+    "expected_decision": "approve",
+    "expected_payout": 60000
+  },
+  {
+    "id": "F8",
+    "description": "A thief broke my window and took the stereo. The car is still with me.",
+    "days_to_report": 1,
+    "amount": 15000,
+    "police_report": false,
+    "photos": true,
+    "policy_age_days": 500,
+    "expected_decision": "human_review",
+    "expected_payout": 0
+  }
 ]
